@@ -6,8 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title="switch case "
+  title="for loop "
+ user=['akash','kunal','shivram','ajit']
+
+ userDetails=[
+  {name:'akash',email:'akashmourya@edulab.in',phone:'37645556'},
+  {name:'kunal',email:'kunal@edulab.in',phone:'37645556'},
+  {name:'shivram',email:'shivram@edulab.in',phone:'37645556'},
+  {name:'ajit',email:'ajit@edulab.in',phone:'37645556'}
+ ]
  
-  color="skyblue"
    
 }
