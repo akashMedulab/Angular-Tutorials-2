@@ -6,15 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title="for loop "
+  title="Nested loop "
  user=['akash','kunal','shivram','ajit']
 
- userDetails=[
-  {name:'akash',email:'akashmourya@edulab.in',phone:'37645556'},
-  {name:'kunal',email:'kunal@edulab.in',phone:'37645556'},
-  {name:'shivram',email:'shivram@edulab.in',phone:'37645556'},
-  {name:'ajit',email:'ajit@edulab.in',phone:'37645556'}
- ]
+ users=[
+  {name:'akash',phone:'37645556',socialAccounts:['facebook','insta','youtube']},
+  {name:'kunal',phone:'37645556',socialAccounts:['youtube','insta','email']},
+  {name:'shivram',phone:'37645556',socialAccounts:['linked','insta','facebook']},
+  {name:'ajit',phone:'37645556',socialAccounts:['email','insta','linked']},
  
+ ]
    
 }

@@ -1,4 +1,11 @@
 <h1>{{title}}</h1>
-<h2 *ngFor="let item of user">{{item}}</h2>
+<ul *ngFor="let user of users">
+    <li>Name: {{user.name}}</li>
+    <li>phone: {{user.phone}}</li>
+    <li>socialAccounts</li>
 
-<h2 *ngFor="let item of userDetails">{{item.name}}--{{item.email}}--{{item.phone}}</h2>
+    <ul *ngFor="let account of user.socialAccounts">
+        <li>{{account}}</li>
+    </ul>
+
+</ul>
