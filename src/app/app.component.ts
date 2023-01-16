@@ -7,15 +7,15 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title=" Basic Form"
-  
-  userData:any={}
+  title="Toggle"
 
-  getData(data:NgForm){ 
-     console.log(data)
-     this.userData=data
+  display=true
+
+  toggle(){
+    this.display=!this.display
+
   }
-
+ 
  }
   
 
