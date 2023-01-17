@@ -7,19 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title="Todo list"
+  title="send data parent to child component"
    
-  list:any[]=[]
-  addTask(item:string)
-  {
-    this.list.push({id:this.list.length,name:item})
-    console.log(this.list)
+ data =10
 
-  }
-  removeTask(id:number){
-    console.log(id)
-    this.list=this.list.filter(item=>item.id!==id)
-  }
+ updateChild(){
+    this.data=Math.floor(Math.random()*10)
+ }
 
  }
   
