@@ -7,17 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title="reusable component"
+  title="send Data child to parent component"
+   data="a"
+  updateData(item:string)
+  {
 
-  userDetails=[
-
-    {name:"akash",email:"akashmourya@edulab.in"},
-    {name:"kunal",email:"kunal@edulab.in"},
-    {name:"ajit",email:"ajit@edulab.in"},
-    {name:"shivram",email:"shivram@edulab.in"}
-
-  ]
-    
+     console.log(item)
+     this.data=item
+  }
+  
   
 
   
