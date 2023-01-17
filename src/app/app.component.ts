@@ -3,18 +3,24 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  templateUrl:'./app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title="send data parent to child component"
-   
- data =10
+  title="reusable component"
 
- updateChild(){
-    this.data=Math.floor(Math.random()*10)
- }
+  userDetails=[
 
- }
+    {name:"akash",email:"akashmourya@edulab.in"},
+    {name:"kunal",email:"kunal@edulab.in"},
+    {name:"ajit",email:"ajit@edulab.in"},
+    {name:"shivram",email:"shivram@edulab.in"}
+
+  ]
+    
   
+
+  
+   
+} 
 
