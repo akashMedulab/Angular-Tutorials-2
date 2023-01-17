@@ -7,16 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title="send Data child to parent component"
-   data="a"
-  updateData(item:string)
-  {
+  title="two way binding"
 
-     console.log(item)
-     this.data=item
-  }
-  
-  
+  name:any;
+ 
 
   
    

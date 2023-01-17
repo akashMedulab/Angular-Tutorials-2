@@ -5,7 +5,8 @@ import { AppComponent } from './app.component';
 import {FormsModule}from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
-import { ChildComponent } from './child/child.component'
+
+
 
 
 
@@ -16,7 +17,7 @@ import { ChildComponent } from './child/child.component'
  
 
  
-         ChildComponent,
+         
   ],
   imports: [
     BrowserModule,
