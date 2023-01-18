@@ -1,8 +1,14 @@
 <h1>{{title}}</h1>
-<!-- <h1>{{20 | usdInr}}</h1> or  frist -->
 
-<!--  //on more type to converted inr to dollar  second-->
-<h1>{{20 | usdInr:100}}</h1>
+<form #loginForm="ngForm" (ngSubmit)=userLogin(loginForm.value)>
+<input type="text" placeholder="Enter the  Name" name="name" ngModel>
+<br/><br/>
+<input type="password" placeholder="Enter the  Password" name="password" ngModel>
+<br/><br/>
+<button>Login</button>
+
+
+</form>
 
 
 

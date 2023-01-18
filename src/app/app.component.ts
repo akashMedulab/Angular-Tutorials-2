@@ -7,8 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title="custom  pipes"
+  title="Template driven form"
 
-
+  userLogin(item:any){
+    console.log(item)
+  }
 } 
 
