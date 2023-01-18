@@ -7,12 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title="Advance of pipes"
+  title="custom  pipes"
 
-  user={
-    name:'akash',
-    age:23
-  }
 
 } 
 
