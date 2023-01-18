@@ -7,9 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title="two way binding"
+  title="tamplate Reference variable"
 
-  name:any;
+  getval(item:any){
+    console.log(item)
+  }
  
 
   
