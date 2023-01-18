@@ -7,14 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title="tamplate Reference variable"
+  title="Basic of ts for angular"
 
-  getval(item:any){
-    console.log(item)
-  }
- 
-
-  
-   
+     data:Number=20
 } 
 
