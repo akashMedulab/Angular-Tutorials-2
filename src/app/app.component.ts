@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
+import { FormGroup } from '@angular/forms';
+import { FormControlName } from '@angular/forms';
 
 
 @Component({
@@ -7,10 +10,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title="Template driven form"
+  title="Reactive Form "
+  loginForm=new  FormGroup ({
+    name:new FormControl(''),
+    email:new FormControl(''),
+    password:new FormControl('')
 
-  userLogin(item:any){
-    console.log(item)
+  })
+   
+  userLogin(){
+    console.log(this.loginForm.value)
   }
 } 
 

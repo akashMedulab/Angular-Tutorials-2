@@ -1,22 +1,21 @@
 <h1>{{title}}</h1>
 
-<form #loginForm="ngForm" (ngSubmit)=userLogin(loginForm.value)>
+<form [formGroup]="loginForm" (ngSubmit)=userLogin()>
 
-    <input type="text" required #name="ngModel" pattern="a-zA-Z" placeholder="Enter the  Name" name="name" ngModel>
-    <br />
-    <span *ngIf="name.invalid && name.touched" style="color: red;" >enter a valid input</span><br />
+    <input type="text"  placeholder="Enter the  Name" name="name"  formControlName="name">
+    <br /><br/>
+  
 
-    <input type="email" required #email="ngModel" email placeholder="Enter the  Name" name="email" ngModel>
+    <input type="email" placeholder="Enter the  email" name="email"  formControlName="email">
     <br />
-    <span *ngIf="email.invalid && email.touched" style="color: red;" >enter a valid input</span><br />
+   
     <br />
 
-    <input type="password" required #password="ngModel" placeholder="Enter the  Password" minlength="2" name="password"
-        ngModel>
-    <br /><span *ngIf="password.invalid && password.touched" style="color: red;" >enter a valid input</span><br />
+    <input type="password" placeholder="Enter the  Password" name="password"  formControlName="password">
+ 
 
     <br /><br />
-    <button [disabled]="loginForm.invalid">Login</button>
+    <button >Login</button>
 
 
 </form>
