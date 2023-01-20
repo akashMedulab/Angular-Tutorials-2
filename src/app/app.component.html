@@ -1,24 +1,5 @@
 <h1>{{title}}</h1>
+<h2 appRedEl>{{title}}</h2>
 
-<form [formGroup]="loginForm" (ngSubmit)=userLogin()>
-
-    <input type="text"  placeholder="Enter the  Name" name="name"  formControlName="name">
-    <br />
-     <span style="color: red;" *ngIf="name && name.invalid && name.touched">This field is not valid</span>
-    <br/><br/>
-  
-
-    <input type="email" placeholder="Enter the  email" name="email"  formControlName="email">
-    <br />
-   <span style="color: red;" *ngIf="email && email.invalid && email.touched">This field is not valid</span>
-    <br /><br/>
-
-    <input type="password" placeholder="Enter the  Password" name="password"  formControlName="password">  
-    <br />
-    <span style="color: red;" *ngIf="password && password.invalid && password.touched">This field is not valid</span>
-    <br/>
-    <br />
-    <button [disabled]="loginForm.invalid" >Login</button>
-
-    
-</form>
+<p>hello akash</p>
+<p appRedEl>hello shivram</p>
